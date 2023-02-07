@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.itshenryz.com/2022/06/01/ledu-playback-onclick-download/</loc>
+    <loc>https://blog.itshenryz.com/2023/01/31/palera1n-win-without-usb/</loc>
     
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.itshenryz.com/about/index.html</loc>
+    
+    <lastmod>2023-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.itshenryz.com/2022/06/01/ledu-playback-download/</loc>
+    
+    <lastmod>2023-02-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +31,7 @@
   <url>
     <loc>https://blog.itshenryz.com/2022/05/22/dingtalk_download/</loc>
     
-    <lastmod>2022-07-20</lastmod>
+    <lastmod>2023-02-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +40,7 @@
 
   <url>
     <loc>https://blog.itshenryz.com/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

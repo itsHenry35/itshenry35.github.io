@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>【小白向】在Windows电脑上使用palera1n，iOS15及iOS16的checkm8越狱教程 | Henry's blog</title><meta name="author" content="itsHenry"><meta name="copyright" content="itsHenry"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="自制镜像，小白也会，操作简单，iOS新版越狱">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【小白向】在Windows电脑上使用palera1n，iOS15及iOS16的checkm8越狱教程">
+<meta property="og:url" content="https://blog.itshenryz.com/2023/01/31/palera1n-win-without-usb/index.html">
+<meta property="og:site_name" content="Henry&#39;s blog">
+<meta property="og:description" content="自制镜像，小白也会，操作简单，iOS新版越狱">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/58730749">
+<meta property="article:published_time" content="2023-01-31T03:25:30.000Z">
+<meta property="article:modified_time" content="2023-02-07T13:05:36.671Z">
+<meta property="article:author" content="itsHenry">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/58730749"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.itshenryz.com/2023/01/31/palera1n-win-without-usb/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-20FD9YS8KE"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-20FD9YS8KE');
+</script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;844b979bfab64632b71d5d180df8e757&quot;}"></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【小白向】在Windows电脑上使用palera1n，iOS15及iOS16的checkm8越狱教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-02-07 21:05:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><link rel="stylesheet" href="https://npm.elemecdn.com/pace-js@1.2.4/themes/blue/pace-theme-minimal.css"/><script src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/58730749" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Henry's blog"><span class="site-name">Henry's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【小白向】在Windows电脑上使用palera1n，iOS15及iOS16的checkm8越狱教程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-31T03:25:30.000Z" title="发表于 2023-01-31 11:25:30">2023-01-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-02-07T13:05:36.671Z" title="更新于 2023-02-07 21:05:36">2023-02-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="【小白向】在Windows电脑上使用palera1n，iOS15及iOS16的checkm8越狱教程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Hello，好久没有更新Blog了哈哈哈</p>
+<p>今天来说说怎么在搭载了Windows的电脑上运行Palera1n给苹果设备越狱吧~（虚拟机是不行的）</p>
+<p>另外有一些注意事项，就是如果你的系统是iOS16.2或者更新，<strong>App Store会出现一些问题</strong>，不建议越狱。</p>
+<p>如果你的系统是iOS16或者更新的话，你如果设定过密码，你<strong>必须抹掉所有设置或内容</strong>才可以越狱。<strong>（这样会丢失你的所有数据！）</strong></p>
+<p>如果你是A10(X) 或者 A11的设备，你在越狱后将<strong>无法使用密码</strong>！</p>
+<p>另外，这个越狱是基于Checkm8漏洞，<strong>只有A5-A11的设备可以使用</strong>。</p>
+<p>如果不知道你的设备是什么芯片，可以前往此处查询，SoC：后面的就是芯片 <a target="_blank" rel="noopener" href="https://ios.cfw.guide/get-started/">Get Started | iOS Guide (cfw.guide)</a></p>
+<p>如果你已经准备好，那我们就开始吧~</p>
+<h2 id="文字教程："><a href="#文字教程：" class="headerlink" title="文字教程："></a>文字教程：</h2><h3 id="在Windows下的操作步骤："><a href="#在Windows下的操作步骤：" class="headerlink" title="在Windows下的操作步骤："></a>在Windows下的操作步骤：</h3><h4 id="下载Palera1n特制Ubuntu镜像"><a href="#下载Palera1n特制Ubuntu镜像" class="headerlink" title="下载Palera1n特制Ubuntu镜像"></a>下载Palera1n特制Ubuntu镜像</h4><p>镜像链接：<a target="_blank" rel="noopener" href="https://alist.itshenryz.com/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/%E4%B8%80%E4%BA%9B%E6%9D%82%E7%89%A9/Palera1n%E9%95%9C%E5%83%8F%E5%8F%8A%E6%89%80%E9%9C%80%E5%B7%A5%E5%85%B7/palera1n.iso">palera1n.iso | AList (itshenryz.com)</a></p>
+<p>记得把镜像放在任意一个分区的<strong>根目录</strong>下</p>
+<h4 id="配置引导"><a href="#配置引导" class="headerlink" title="配置引导"></a>配置引导</h4><p>打开Windows下的“磁盘管理”，找到空闲空间较多的分区，右键这个分区，选择压缩卷，等待计算完成后，在你想要压缩的空间内填写32(MB)。</p>
+<p><img src="https://cdn.itshenryz.com/202301311146909.png" alt="image-202301311146909"></p>
+<p>右键未分配空间，新建一个<strong>FAT32</strong>的分区，大小为32(MB)。</p>
+<p><img src="https://cdn.itshenryz.com/202301311148338.png" alt="image-20230131114854277"></p>
+<p>下载<a target="_blank" rel="noopener" href="https://alist.itshenryz.com/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/%E4%B8%80%E4%BA%9B%E6%9D%82%E7%89%A9/Palera1n%E9%95%9C%E5%83%8F%E5%8F%8A%E6%89%80%E9%9C%80%E5%B7%A5%E5%85%B7/bootx64.efi">bootx64.efi | AList (itshenryz.com)</a>，并在刚才创建的的分区中新建文件夹”EFI”，然后在EFI文件家内再新建文件夹”Boot”，最后把下载的bootx64.efi放进Boot文件夹中。 (这里使用的引导是开源的<a target="_blank" rel="noopener" href="https://github.com/a1ive/grub2-filemanager">a1ive&#x2F;grub2-filemanager: GRUB2-based file manager (github.com)</a>)</p>
+<p>下载Easyuefi(<a target="_blank" rel="noopener" href="https://alist.itshenryz.com/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/%E4%B8%80%E4%BA%9B%E6%9D%82%E7%89%A9/Palera1n%E9%95%9C%E5%83%8F%E5%8F%8A%E6%89%80%E9%9C%80%E5%B7%A5%E5%85%B7/EasyUEFI.v4.6.Enterprise.exe">EasyUEFI.v4.6.Enterprise.exe | AList (itshenryz.com)</a>)并打开，选择管理EFI启动项，并创建新项。</p>
+<p><img src="https://cdn.itshenryz.com/202302011431634.png" alt="image-20230201143115537"></p>
+<p>类别选择Linux或者其它操作系统，描述填写Grub(<strong>填不进去的把输入法切换成英文输入</strong>)，然后目标分区选择前面创建的那个分区，紧接着填写文件路径，按浏览文件，依次展开EFI-Boot，选择bootx64.efi。</p>
+<p><img src="https://cdn.itshenryz.com/202302031536097.png" alt="image-20230203153611987"></p>
+<p><img src="https://cdn.itshenryz.com/202302031537127.png" alt="image-20230203153749030"></p>
+<p>单击确定。</p>
+<p>自此，请重启电脑，在Windows下的操作已完成。</p>
+<h3 id="重启后的操作"><a href="#重启后的操作" class="headerlink" title="重启后的操作"></a>重启后的操作</h3><p>重启电脑后，狂按选择引导快捷键，进入选择启动项的页面，这里贴一张图关于各种电脑的选择引导快捷键。(图片来源于网络)</p>
+<p><img src="https://cdn.itshenryz.com/202302032152905.png" alt="bd3eb13533fa828b2d77b6c9fa1f4134970a5a47"></p>
+<p>选择”Grub”，并按下回车键启动。</p>
+<p><img src="https://cdn.itshenryz.com/202302072012871.png" alt="image-20230207201217575"></p>
+<p>等待引导加载。</p>
+<p>加载后，找到你复制到根目录的palera1n.iso。先选择分区，再找到iso并按下回车键。（键盘上下左右键控制，回车确定）</p>
+<p>选择从ISO启动Ubuntu，并且按下回车。</p>
+<p><img src="https://cdn.itshenryz.com/202302072017526.png" alt="05200353"></p>
+<p>接下来，选择第一项Ubuntu Live并按下回车。</p>
+<p><img src="https://cdn.itshenryz.com/202302072019545.png" alt="image-20230207201929435"></p>
+<p>接下来，询问是否用中文时，按下字母y，我们就可以进入越狱的系统了。</p>
+<p><img src="https://cdn.itshenryz.com/202302072020755.png" alt="image-20230207202024640"></p>
+<h3 id="越狱系统-Ubuntu-内的操作"><a href="#越狱系统-Ubuntu-内的操作" class="headerlink" title="越狱系统(Ubuntu)内的操作"></a>越狱系统(Ubuntu)内的操作</h3><p>进入系统后<strong>千万不要把屏幕上的终端关闭</strong></p>
+<h4 id="连接网络"><a href="#连接网络" class="headerlink" title="连接网络"></a>连接网络</h4><p>连接无线网络方法：</p>
+<p><img src="https://cdn.itshenryz.com/202302072023512.png" alt="image-20230207202350357"></p>
+<p>无线网络连接完成后，等待大约20秒。</p>
+<p>有线网络直接等待网络连接成功即可，不需要任何操作，一般需要大约5秒。</p>
+<p>如果网络连接成功，不管你是无线链接还是有线连接，原本无字的终端会开始询问你是否继续，此时，<strong>不要急着继续。</strong></p>
+<h4 id="连接设备"><a href="#连接设备" class="headerlink" title="连接设备"></a>连接设备</h4><p>把USB线插入你的电脑，如果屏幕中间出现了”未信任设备”的弹窗，请在iOS设备上点击允许，然后在电脑上点击重试。</p>
+<p>如果未出现这个弹窗，就把数据线拔出后重新插入，等待大约5秒，没有出现就再次插拔。</p>
+<p><img src="https://cdn.itshenryz.com/202302072032176.png" alt="image-20230207203225131"></p>
+<h4 id="开始越狱"><a href="#开始越狱" class="headerlink" title="开始越狱"></a>开始越狱</h4><p>鼠标点击一下屏幕中间的终端上闪烁的光标，并且阅读注意事项，然后按照脚本要求进行输入并回车。请<strong>仔细阅读</strong>关于Semi-tethered的介绍，只要你的<strong>剩余空间还&gt;10G</strong>，就<strong>强烈建议开启</strong>，否则设备将不能脱离电脑启动。</p>
+<p>在输入完iOS版本并按下回车后，越狱过程就正式开始了。</p>
+<p>如果终端跳出<code>[*] Press any key when ready for DFU mode</code>，请按下回车键，并按照脚本的指示进行对iOS设备的操作。</p>
+<p>翻译：</p>
+<p>Get ready. 做好准备。</p>
+<p>Hold home + power button. 同时按住home键和电源键。</p>
+<p>Hold volume down + side button. 同时按住音量减和开机键。</p>
+<p>Release side button, but keep holding volume down. 松开电源键，但是继续按住音量减。</p>
+<p>Release power button, but keep holding home button. 松开电源键，但是继续按住home键。</p>
+<p>如果出现<code>[*] Device entered DFU!</code>，即可松开所有按键。</p>
+<p>但是如果出现<code>[-] Device did not enter DFU mode</code>，就需要再试一次</p>
+<p>等待数十分钟后，越狱即可完成。</p>
+<p>如果途中出现了失败，可以照脚本询问重试。如果依然不成功，可以评论询问我或者去官方DIscord带着日志寻求帮助。</p>
+<h3 id="iOS设备内的操作"><a href="#iOS设备内的操作" class="headerlink" title="iOS设备内的操作"></a>iOS设备内的操作</h3><p>打开桌面上的palera1n程序。</p>
+<p><img src="https://cdn.itshenryz.com/202302072100879.png" alt="image-20230207210030771"></p>
+<p>如果你是第一次越狱，就请点击底下的Install。如果这是你因为重启后想要还原越狱，请点击底下的齿轮，并点击Do all.</p>
+<p><img src="https://cdn.itshenryz.com/202302072101783.png" alt="image-20230207210122336"></p>
+<p>看到这里，越狱过程就彻底完成啦。完结撒花🎉</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.itshenryz.com">itsHenry</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.itshenryz.com/2023/01/31/palera1n-win-without-usb/">https://blog.itshenryz.com/2023/01/31/palera1n-win-without-usb/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.itshenryz.com" target="_blank">Henry's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://avatars.githubusercontent.com/u/58730749" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/06/01/ledu-playback-download/" title="乐读回放一键下载教程~"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">乐读回放一键下载教程~</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/58730749" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">itsHenry</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/itsHenry35/"><i class="fab fa-github"></i><span>itsHenry35</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Welcome to my blog~ <br/> jsDelivr加速由Tianli提供</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E6%95%99%E7%A8%8B%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">文字教程：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8Windows%E4%B8%8B%E7%9A%84%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-number">1.1.1.</span> <span class="toc-text">在Windows下的操作步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDPalera1n%E7%89%B9%E5%88%B6Ubuntu%E9%95%9C%E5%83%8F"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">下载Palera1n特制Ubuntu镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%BC%95%E5%AF%BC"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">配置引导</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AF%E5%90%8E%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.2.</span> <span class="toc-text">重启后的操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%8A%E7%8B%B1%E7%B3%BB%E7%BB%9F-Ubuntu-%E5%86%85%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.3.</span> <span class="toc-text">越狱系统(Ubuntu)内的操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">连接网络</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">连接设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E8%B6%8A%E7%8B%B1"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">开始越狱</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#iOS%E8%AE%BE%E5%A4%87%E5%86%85%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.4.</span> <span class="toc-text">iOS设备内的操作</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/31/palera1n-win-without-usb/" title="【小白向】在Windows电脑上使用palera1n，iOS15及iOS16的checkm8越狱教程">【小白向】在Windows电脑上使用palera1n，iOS15及iOS16的checkm8越狱教程</a><time datetime="2023-01-31T03:25:30.000Z" title="发表于 2023-01-31 11:25:30">2023-01-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/06/01/ledu-playback-download/" title="乐读回放一键下载教程~">乐读回放一键下载教程~</a><time datetime="2022-06-01T14:11:17.000Z" title="发表于 2022-06-01 22:11:17">2022-06-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/22/dingtalk_download/" title="钉钉在线课堂回放一键下载">钉钉在线课堂回放一键下载</a><time datetime="2022-05-22T04:18:07.000Z" title="发表于 2022-05-22 12:18:07">2022-05-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By itsHenry</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://npm.elemecdn.com/hexo-theme-butterfly@4.6.1/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-butterfly@4.6.1/source/js/main.js"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.itshenryz.com',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.itshenryz.com',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://npm.elemecdn.com/twikoo@1.6.8/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script><script src="https://cdn1.tianli0.top/gh/itshenry35/navigation_page@master/snow.min.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

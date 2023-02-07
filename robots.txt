@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://blog.itshenry.tk/sitemap.xml
+Sitemap: https://blog.itshenryz.com/sitemap.xml
